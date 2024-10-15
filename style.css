@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    /* background-color: #d3d9d4; */
+   
+}
+#header{
+    width:100%;
+    height: 100vh;
+    /* background-image: url(background.jpg); */
+}
+
+.container{
+    padding: 10px 10%;
+    /*Check if anything changes in phone version of site if we write 100px in place of 10%*/
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Check what changes for space-around and space-between 
+    Ans:spacicg ka difference lag rha rest same h*/
+}
+.nav-name{
+    font-size: larger;
+    font-family: fantasy;
+    color: white;
+}
+.logo{
+    width: 140px;
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul div{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+    
+}
+nav ul div a:hover{
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+nav ul div a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+    position: relative;
+}
+
+nav ul div a::after{
+    content: '';
+    width:0px;
+    height: 3px;
+    position:absolute;
+    background-color: #ff0000;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    color: #fff;
+    margin-top: 20%;
+    font-size: 30px
+}
+.header-text h1{
+    margin-top: 20px;
+    font-size: 60px
+}
+.header-text h1 span{
+    color: rgb(235, 4, 4);
+    
+}
+/* -------------------------------about------------------------ */
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+    /* Check what happens if you not or you do flex-wrap  */
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+#h6{
+        display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    margin-bottom: 10px;
+}
+.tab-titles ul{
+    display: flex;
+    margin: 12px 60px;
+}
+.tab-titles ul li{
+    margin: 0px 20px;
+    list-style: none;
+}
+
+
+.tab-titles ul li img{
+    width: 60px;
+    height: 60px;
+   
+}
+.tab-titles ul li .img1{
+    width: 40px;
+    height: 51px;
+    margin-top: 5px;
+}
+/* ------------------------portfolio------------------------------ */
+
+#portfolio{
+    padding: 50px 0px;
+    
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work-list .work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work-list .work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: 70%;
+}
+.work-list .work .layer{
+    color: #fff; 
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.work-list .work .layer a{
+
+    text-decoration: none;
+    cursor: pointer;
+}
+/* -------------------------contact-------------------------------- */
+/* .social-icons a img{
+    width: 50px;
+    height: 50px; 
+    margin-top: 20px;
+} */
+
+.contact-left{
+     flex-basis: 35%; 
+}
+.contact-right{
+    flex-basis: 60%;
+} 
+.contact-left p{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 20px;
+    gap: 15px;
+    color: white;
+}
+.contact-left p img{
+    width: 30px;
+    height: 30px;
+}
+.contact-left p a{
+    text-decoration: none;
+}
+ .btn2{
+    background-color: rgb(228, 6, 135); 
+    background: #ff004f;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+} 
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+form p{
+    color: rgb(43, 228, 68);
+}
+.copyright{
+width: 100%;
+text-align: center;
+padding: 25px 0;
+background: #262626;
+font-weight: 300;
+margin-top: 20px;
+}   
+   
+
+
+/* -------------------------------------------css for small screen-------------------- */
+
+nav .fas{
+    display: none;
+}
+/* nav .fas img{
+    width: 25px;
+    height: 25px;
+} */
+
+@media only screen and (max-width: 600px){
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+        margin-right: 25%;
+    }
+    
+    nav ul{
+        background-color: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        /* height: 100vh; */
+        height: 100%;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 25px;
+    }
+    
+
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}

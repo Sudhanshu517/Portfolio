@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="logo.png" alt="logo" class="logo"> -->
+                <div class="nav-name">SUDHANSHU PORTFOLIO</div>
+                <ul id="sidemenu">
+                    <div><a href="#header">Home</a></div>
+                    <div><a href="#about">About</a></div>
+                    
+                    <div><a href="#portfolio">My Work</a></div>
+                    <div><a href="#contact">Contact</a></div>
+                    <div class="fas" onclick="closemenu()"><img src="close.svg" alt=""></div>
+                </ul>
+                <div class="fas" onclick="openmenu()"><img src="menu.svg" alt=""></div>
+            </nav>
+            <div class="header-text">
+                    <div class="post">Web Developer</div>
+                <h1>Hi, I'm <span>Sudhanshu</span><br> From India <br>
+                   
+                    <span id="element"> </span>
+                
+                
+            </div>
+        </div>
+    </div>
+    <!-- -----------------about-------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hello! I’m Sudhanshu, a passionate college student currently diving deep into the world of web development. My journey began with a curiosity for how websites work and has since evolved into a full-fledged passion for creating dynamic and user-friendly web experiences.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links">Skills
+                        <ul>
+                            <li><img src="html5.png" alt="" class="img1"></li>
+                            <li><img src="css3.png"alt=""></li>
+                            <li><img src="js.png" alt=""></li>
+                            <li><img src="nodejs.png" alt=""></li>
+                        </ul>
+                        </p>
+                        <p class="tab-links">Experience
+                            <ul><li>
+                                <h4 style=" margin-bottom: 10px;">Web Developer, MSC Society, MSIT</h4>
+                                <h6 id="h6">Sep-2024-Present </h6>
+                                <P>As a web developer for the MSC Society, I have been responsible for designing, developing, and maintaining the society’s website.My role involves creating user-friendly and visually appealing web pages using HTML, CSS, and JavaScript.</P>
+                            </li></ul>
+                        </p>
+                        <p class="tab-links">Education
+                            <ul><li>
+                                I completed my Class X and Class XII education under the Central Board of Secondary Education (CBSE). <br>
+                                Currently, I am pursuing a Bachelor of Technology (B.Tech) in Computer Science at Maharaja Surajmal Institute of Technology (MSIT). 
+                            </li></ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------portfolio------------------------- -->
+     <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">My Work</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-2.JPG" alt="">
+                    <div class="layer">
+                        <h3><a href="">Slide Duplicator</a></h3>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-1.png" alt="">
+                    <div class="layer">
+                        <h3><a href="">Coming Soon...</a></h3>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" alt="">
+                    <div class="layer">
+                        <h3><a href="">Coming Soon...</a></h3>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- -------------------------contact---------------------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <div class="social-icons">
+                    <p><img src="send.svg" alt="">sudhanshusharma517@gmail.com</p>
+                    <p><img src="phone.svg" alt="">0123456789</p>
+                    <p><a href="https://www.linkedin.com/in/sudhanshu-sharma"><img src="linkedin.svg" alt=""></a>
+                        <a href="https://www.linkedin.com/in/sudhanshu-sharma">LinkedIn</a></p> 
+                     <p><a href="https://github.com/Sudhanshu517"><img src="github.svg" alt=""></a>
+                        <a href="https://github.com/Sudhanshu517">GitHub</a></p>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <p>*Currently form is not accepting responses. Thankyou for your patience.*</p>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+           
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Sudhanshu All Rights Reserved</p>
+    </div>
+</div>
